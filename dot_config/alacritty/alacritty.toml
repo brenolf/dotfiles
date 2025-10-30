@@ -12,3 +12,7 @@ args = ["attach"]
 import = [
     "~/.config/alacritty/themes/catppuccin/catppuccin-mocha.toml"
 ]
+
+[window]
+startup_mode = "Fullscreen"
+
