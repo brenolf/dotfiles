@@ -6,7 +6,7 @@ family = "MesloLGS NF"
 
 [terminal.shell]
 program = "tmux"
-args = "attach"
+args = ["attach"]
 
 [general]
 import = [
