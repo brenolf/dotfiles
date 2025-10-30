@@ -9,12 +9,11 @@
       "name": "Ollama (local)",
       "options": {
         "baseURL": "http://localhost:11434/v1",
-        "num_ctx": 9216
       },
       "models": {
-        "qwen3-coder:30b": {
+        "qwen3:latest": {
           "name": "Qwen Code",
-          "tool_call": true
+          "tools": true
         }
       }
     },
