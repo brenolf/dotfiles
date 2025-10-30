@@ -3,3 +3,8 @@ family = "MesloLGS NF"
 
 [terminal.shell]
 program = "tmux"
+
+[general]
+import = [
+    "~/.config/alacritty/themes/monokai_charcoal_white.yaml"
+]
