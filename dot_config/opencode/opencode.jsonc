@@ -12,7 +12,8 @@
       },
       "models": {
         "qwen3-coder:30b": {
-          "name": "Qwen Code"
+          "name": "Qwen Code",
+          "tool_call": true
         }
       }
     },
