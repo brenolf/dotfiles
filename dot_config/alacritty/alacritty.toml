@@ -14,5 +14,5 @@ import = [
 ]
 
 [window]
-startup_mode = "Fullscreen"
+startup_mode = "Maximized"
 
