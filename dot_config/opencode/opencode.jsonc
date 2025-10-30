@@ -13,7 +13,8 @@
       "models": {
         "qwen3-coder:latest": {
           "name": "Qwen Coder",
-          "tools": true
+          "tools": true,
+          "tool_call": true
         }
       }
     },
