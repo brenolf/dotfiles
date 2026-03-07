@@ -3,6 +3,14 @@
   "provider": {
     "ollama": {
       "models": {
+        "qwen3.5": {
+          "_launch": true,
+          "name": "qwen3.5"
+        },
+        "qwen3.5:27b": {
+          "_launch": true,
+          "name": "qwen3.5:27b"
+        },
         "qwen3.5:9b": {
           "_launch": true,
           "name": "qwen3.5:9b"
