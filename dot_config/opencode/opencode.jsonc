@@ -12,7 +12,7 @@
       },
       "models": {
         "qwen3.5:latest": {
-          "name": "Qwen 3.5",
+          "name": "qwen3.5:latest",
           "tools": true,
           "tool_call": true
         }
