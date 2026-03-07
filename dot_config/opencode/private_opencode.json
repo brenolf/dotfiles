@@ -3,9 +3,9 @@
   "provider": {
     "ollama": {
       "models": {
-        "qwen3.5:27b": {
+        "qwen3.5:9b": {
           "_launch": true,
-          "name": "qwen3.5:27b"
+          "name": "qwen3.5:9b"
         }
       },
       "name": "Ollama",
