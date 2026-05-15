@@ -4,9 +4,8 @@ TERM = "xterm-256color"
 [font.normal]
 family = "MesloLGS NF"
 
-# [terminal.shell]
-# program = "tmux"
-# args = ["attach"]
+[terminal.shell]
+program = "/bin/zsh"
 
 [general]
 import = [
