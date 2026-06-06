@@ -12,9 +12,6 @@ alias ls="eza --icons=always -l"
 
 antigen apply
 
-# Interactive completion menu: Tab opens a highlighted list you navigate
-# with the arrow keys (Enter to select) instead of cycling matches in place.
-zmodload zsh/complist
 zstyle ':completion:*' menu select
 
 eval "$(starship init zsh)"
