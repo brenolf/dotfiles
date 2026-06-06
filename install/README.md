@@ -16,7 +16,7 @@ Detection is by **machine identity**, not OS:
 | Machine        | Detected by                       | Packages                                   | Config                              |
 |----------------|-----------------------------------|--------------------------------------------|-------------------------------------|
 | Work (Shopify) | `~/.local/state/tec` exists (TEC) | Homebrew (`Brewfile`)                      | **symlinks** created (no chezmoi)   |
-| Personal       | hostname `obelisk` (Nobara/Fedora)| `dnf` (`fedora-packages.txt`) + scripts    | managed by **chezmoi** (no symlinks)|
+| Personal       | hostname `obelisk` (Nobara/Fedora)| `dnf` (`fedora-packages.txt`) + scripts    | **chezmoi** installed if missing, then `chezmoi init --apply` (no symlinks)|
 | Anything else  | —                                 | nothing                                    | nothing — just an alert             |
 
 ## Notes

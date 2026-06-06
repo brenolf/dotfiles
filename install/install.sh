@@ -95,6 +95,13 @@ install_work() {
 }
 
 # --- personal (Fedora / dnf) -----------------------------------------------
+ensure_chezmoi() {
+    if command -v chezmoi >/dev/null 2>&1; then return; fi
+    log "chezmoi not found — installing to ~/.local/bin"
+    sh -c "$(curl -fsLS get.chezmoi.io)" -- -b "$HOME/.local/bin"
+    export PATH="$HOME/.local/bin:$PATH"
+}
+
 install_personal() {
     log "Personal machine detected (obelisk)."
 
@@ -125,8 +132,12 @@ install_personal() {
         fc-cache -f "$font_dir" >/dev/null 2>&1 || true
     fi
 
-    warn "Config is managed by chezmoi on personal machines — no symlinks created."
-    warn "Run 'chezmoi apply', then 'prefix + I' in tmux to install plugins."
+    # Config is managed by chezmoi on personal machines (no symlinks).
+    ensure_chezmoi
+    log "Applying dotfiles with chezmoi (source: $REPO_DIR)"
+    chezmoi init --apply --source="$REPO_DIR"
+
+    warn "Open tmux and press 'prefix + I' (Ctrl-Space, Shift-i) to install tmux plugins."
     ok "Personal setup complete."
 }
 
