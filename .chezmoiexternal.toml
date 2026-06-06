@@ -3,3 +3,10 @@
     url = "https://git.io/antigen"
     refreshPeriod = "168h"
 
+# TPM (tmux plugin manager) — bootstraps tmux plugins, like antigen does for zsh.
+# Other tmux plugins are installed by TPM itself via `prefix + I`.
+[".tmux/plugins/tpm"]
+    type = "git-repo"
+    url = "https://github.com/tmux-plugins/tpm.git"
+    refreshPeriod = "168h"
+
