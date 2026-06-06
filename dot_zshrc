@@ -20,6 +20,10 @@ eval "$(starship init zsh)"
 if [[ -d "$HOME/.local/state/tec" ]]; then
     # Added by tec agent
     [[ -x "$HOME/.local/state/tec/profiles/base/current/global/init" ]] && eval "$("$HOME/.local/state/tec/profiles/base/current/global/init" zsh)"
+
+    # Personal pi <-> Slack agent (Iara) connection
+    export IARA_CHANNEL=C0AGJKHCB7D
+    export IARA_USER=W018GAGDCVB
 fi
 
 # Home machine (obelisk)
