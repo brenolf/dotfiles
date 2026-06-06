@@ -1,0 +1,2 @@
+# Setup scripts — not meant to be deployed into $HOME by chezmoi.
+install

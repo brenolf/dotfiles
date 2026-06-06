@@ -1,0 +1,15 @@
+# Homebrew Bundle file for Breno's WORK (macOS) machine.
+# Applied by install/install.sh via: brew bundle --file=install/Brewfile
+
+# Nerd font with powerline/glyph support (used by starship + the terminal)
+cask "font-meslo-lg-nerd-font"
+
+# Terminal emulator (GUI .app)
+cask "alacritty"
+
+# CLI tools
+brew "tmux"
+brew "btop"
+brew "eza"
+brew "tldr"
+brew "starship"
