@@ -10,11 +10,20 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 alias ls="eza --icons=always -l"
 
-if [[ "$(hostname)" == "obelisk" ]]; then
-    alias serverino="ssh 192.168.2.253 -l brenolf"
-fi
-
 antigen apply
 
 eval "$(starship init zsh)"
+
+# --- Machine-specific configuration ---
+
+# Shopify machine — detected by TEC (Shopify's managed dev tooling)
+if [[ -d "$HOME/.local/state/tec" ]]; then
+    # Added by tec agent
+    [[ -x "$HOME/.local/state/tec/profiles/base/current/global/init" ]] && eval "$("$HOME/.local/state/tec/profiles/base/current/global/init" zsh)"
+fi
+
+# Home machine (obelisk)
+if [[ "$(hostname)" == "obelisk" ]]; then
+    alias serverino="ssh 192.168.2.253 -l brenolf"
+fi
 
