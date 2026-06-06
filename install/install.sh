@@ -107,12 +107,6 @@ install_personal() {
     # shellcheck disable=SC2046
     sudo dnf install -y $(grep -vE '^[[:space:]]*#|^[[:space:]]*$' "$SCRIPT_DIR/fedora-packages.txt")
 
-    # A tldr client (tealdeer) — package name differs from macOS.
-    if ! command -v tldr >/dev/null 2>&1; then
-        sudo dnf install -y tealdeer 2>/dev/null \
-            || warn "Could not install a tldr client via dnf; install 'tealdeer' manually."
-    fi
-
     # starship isn't reliably in Fedora repos -> official installer.
     if ! command -v starship >/dev/null 2>&1; then
         log "Installing starship via official script"

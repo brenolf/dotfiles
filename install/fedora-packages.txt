@@ -2,10 +2,10 @@
 # Consumed by install/install.sh (install_personal).
 #
 # Handled separately in the script (not via dnf):
-#   - a tldr client (tealdeer)
 #   - starship (official install script)
 #   - MesloLGS Nerd Font (downloaded from the nerd-fonts release)
 tmux
 alacritty
 btop
 eza
+tldr
