@@ -33,3 +33,6 @@ if [[ "$(hostname)" == "obelisk" ]]; then
     alias serverino="ssh 192.168.2.253 -l brenolf"
 fi
 
+
+# Added by tec agent
+[[ -x /Users/breno/.local/state/tec/profiles/base/current/global/init ]] && eval "$(/Users/breno/.local/state/tec/profiles/base/current/global/init zsh)"
