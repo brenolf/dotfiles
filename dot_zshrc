@@ -20,9 +20,11 @@ eval "$(starship init zsh)"
 
 # Shopify machine — detected by TEC (Shopify's managed dev tooling)
 if [[ -d "$HOME/.local/state/tec" ]]; then
-    # Personal pi <-> Slack agent (Iara) connection
+    # Personal pi <-> Slack agent (Iara) connection.
+    # IARA_USER accepts a comma-separated list so both the handle (what
+    # agent-slack returns on enterprise grid) and the W-id work.
     export IARA_CHANNEL=C0AGJKHCB7D
-    export IARA_USER=W018GAGDCVB
+    export IARA_USER=breno.limadefreitas,W018GAGDCVB
 fi
 
 # Home machine (obelisk)
