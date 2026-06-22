@@ -21,6 +21,7 @@ style = "Bold Italic"
 
 [terminal.shell]
 program = "/bin/zsh"
+args = ["-i"]
 
 [general]
 import = [
