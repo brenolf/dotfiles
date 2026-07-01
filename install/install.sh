@@ -67,12 +67,11 @@ create_symlinks() {
     log "Creating config symlinks -> $REPO_DIR"
     link "$REPO_DIR/dot_zshrc"                "$HOME/.zshrc"
     link "$REPO_DIR/dot_tmux.conf"            "$HOME/.tmux.conf"
-    link "$REPO_DIR/dot_config/starship.toml"              "$HOME/.config/starship.toml"
-    link "$REPO_DIR/dot_config/alacritty"                  "$HOME/.config/alacritty"
-    link "$REPO_DIR/dot_config/btop"                       "$HOME/.config/btop"
-    link "$REPO_DIR/dot_config/agent-instructions"         "$HOME/.config/agent-instructions"
-    link "$REPO_DIR/dot_config/agent-instructions/AGENTS.md" "$HOME/.claude/CLAUDE.md"
-    link "$REPO_DIR/dot_config/agent-instructions/AGENTS.md" "$HOME/.pi/agent/AGENTS.md"
+    link "$REPO_DIR/dot_config/starship.toml" "$HOME/.config/starship.toml"
+    link "$REPO_DIR/dot_config/alacritty"     "$HOME/.config/alacritty"
+    link "$REPO_DIR/dot_config/btop"          "$HOME/.config/btop"
+    link "$REPO_DIR/dot_pi/agent/AGENTS.md"   "$HOME/.pi/agent/AGENTS.md"
+    link "$REPO_DIR/dot_pi/agent/AGENTS.md"   "$HOME/.claude/CLAUDE.md"
 }
 
 # --- work (macOS / Homebrew) -----------------------------------------------

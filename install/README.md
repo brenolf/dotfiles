@@ -30,8 +30,7 @@ Detection is by **machine identity**, not OS:
   - `~/.config/starship.toml`
   - `~/.config/alacritty`
   - `~/.config/btop`
-  - `~/.config/agent-instructions`
-  - `~/.claude/CLAUDE.md`
   - `~/.pi/agent/AGENTS.md`
+  - `~/.claude/CLAUDE.md`
 - Existing real files at those paths are moved to `~/.dotfiles-backup-<timestamp>/`
   before linking (the script is idempotent — re-running skips already-correct links).
