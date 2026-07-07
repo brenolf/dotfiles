@@ -25,6 +25,11 @@ if [[ -d "$HOME/.local/state/tec" ]]; then
     # agent-slack returns on enterprise grid) and the W-id work.
     export IARA_CHANNEL=C0AGJKHCB7D
     export IARA_USER=breno.limadefreitas,W018GAGDCVB
+
+    # Keep the machine fully awake (no idle sleep, no display sleep).
+    alias nosleep="sudo pmset -a disablesleep 1 && sudo pmset -a sleep 0 && sudo pmset -a displaysleep 0"
+    # Restore normal sleep behavior (reverse of nosleep).
+    alias yessleep="sudo pmset -a disablesleep 0 && sudo pmset -a sleep 1 && sudo pmset -a displaysleep 10"
 fi
 
 # Home machine (obelisk)
