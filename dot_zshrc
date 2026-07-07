@@ -27,9 +27,9 @@ if [[ -d "$HOME/.local/state/tec" ]]; then
     export IARA_USER=breno.limadefreitas,W018GAGDCVB
 
     # Keep the machine fully awake (no idle sleep, no display sleep).
-    alias nosleep="sudo pmset -a disablesleep 1 && sudo pmset -a sleep 0 && sudo pmset -a displaysleep 0"
+    alias nosleep="sudo pmset -a disablesleep 1 && sudo pmset -a sleep 0 && sudo pmset -a displaysleep 0 && echo '☕️ staying awake'"
     # Restore normal sleep behavior (reverse of nosleep).
-    alias yessleep="sudo pmset -a disablesleep 0 && sudo pmset -a sleep 1 && sudo pmset -a displaysleep 10"
+    alias yessleep="sudo pmset -a disablesleep 0 && sudo pmset -a sleep 1 && sudo pmset -a displaysleep 10 && echo '😴 sleep restored'"
 fi
 
 # Home machine (obelisk)
