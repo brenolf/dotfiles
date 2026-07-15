@@ -11,7 +11,7 @@
 - Match surrounding style and conventions.
 - Avoid speculative features, abstractions, configurability, and broad refactors.
 - Clean up issues introduced by your own changes; mention unrelated problems instead of fixing them silently.
-- Do not add comments to the code you are writing, inclusive of SQL. Default documentation to READMEs where appropriate to the design.
+- Do not add comments to any code. Follow the repo's standards for code documentation; if unclear, ask.
 - Unless explicitly said otherwise, precisely follow the PR templates for the repo you are working.
 
 ## Execution
