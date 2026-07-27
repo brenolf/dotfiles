@@ -12,6 +12,7 @@
 - Avoid speculative features, abstractions, configurability, and broad refactors.
 - Clean up issues introduced by your own changes; mention unrelated problems instead of fixing them silently.
 - Do not add comments to any code. Follow the repo's standards for code documentation; if unclear, ask.
+- When working with DBT models, strictly follow the repo's standards (e.g. docstring on READMEs, enforcing schemas, etc.)
 - Unless explicitly said otherwise, precisely follow the PR templates for the repo you are working.
 
 ## Execution
