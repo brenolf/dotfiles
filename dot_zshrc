@@ -39,3 +39,6 @@ fi
 
 # Added by tec agent
 [[ -x /Users/breno/.local/state/tec/profiles/base/current/global/init ]] && eval "$(/Users/breno/.local/state/tec/profiles/base/current/global/init zsh)"
+
+# Added by Hugging Face CLI installer
+export PATH="/Users/breno/.local/bin:$PATH"
